@@ -27,6 +27,12 @@ app.get('/', (req, res) => {
     res.render('home.ejs', { comments });
 });
 
+app.get('/new', (req, res) => {
+    res.render('new.ejs');
+});
+
+
+
 app.listen(port, () => {
     console.log(`Listening on Port ${port}!`);
 });
