@@ -5,24 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Comment</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
 
     <h1>This is where a new comment is created!</h1>
 
-    <form action="">
-        <label for="username">Enter a Username: </label>
-        <input type="text" name="username" id="username">
-        <br>
-        <label for="content">Enter a Comment: </label>
-        <textarea name="content" id="content" cols="30" rows="5"></textarea>
+    <form id="createForm" action="/" method="post">
+
+        <section>
+            <label for="createUser">Enter a Username: </label>
+            <input type="text" name="username" id="createUser">
+        </section>
+
+        <section>
+            <label for="createContent">Enter a Comment: </label>
+            <textarea name="content" id="createContent" cols="30" rows="5"></textarea>
+        </section>
+
+        <button class="submit">Submit!</button>
+
     </form>
 
     <a href="/"><button>Cancel</button></a>
 
 
-
+    <script src="app.js"></script>
 </body>
 
 </html>

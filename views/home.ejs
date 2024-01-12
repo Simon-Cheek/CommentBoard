@@ -10,13 +10,18 @@
 
 <body>
 
-    <h1>Congrats! You made it! update! Twice!</h1>
+    <h1>Welcome to Simon's Comment Board!</h1>
 
     <div>
         <% for (let item of comments) { %>
-            <h3> This stands for a comment. Practice! NEW</h3>
-            <p>Comment: <%= item.comment %>
-            </p>
+            <div class="commentbox">
+                <p><b>Person:</b>
+                    <%= item.user %>
+                </p>
+                <p><b>Comment:</b>
+                    <%= item.comment %>
+                </p>
+            </div>
             <% } %>
     </div>
 
