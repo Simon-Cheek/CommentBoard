@@ -10,25 +10,25 @@
 
 <body>
 
-    <h1>This is where a new comment is created!</h1>
+    <h1 class="main-head">This is where a new comment is created!</h1>
 
     <form id="createForm" action="/" method="post">
 
-        <section>
+        <section class="input">
             <label for="createUser">Enter a Username: </label>
-            <input type="text" name="username" id="createUser">
+            <input type="text" name="username" id="createUser" placeholder="Username">
         </section>
 
-        <section>
+        <section class="input">
             <label for="createContent">Enter a Comment: </label>
-            <textarea name="content" id="createContent" cols="30" rows="5"></textarea>
+            <textarea name="content" id="createContent" cols="30" rows="5" placeholder="Comment"></textarea>
         </section>
 
-        <button class="submit">Submit!</button>
+        <button class="submit btn">Submit!</button>
 
     </form>
 
-    <a href="/"><button>Cancel</button></a>
+    <a href="/"><button class="btn">Cancel</button></a>
 
 
     <script src="app.js"></script>
