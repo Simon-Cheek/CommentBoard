@@ -12,9 +12,11 @@ app.use(express.urlencoded({ extended: true }));
 
 const comments = [
     {
+        id: 0,
         user: 'User1',
         comment: 'This thing is so cool! Wow, look at this!'
     }, {
+        id: 1,
         user: 'User2',
         comment: 'Nice!'
     }
@@ -34,10 +36,9 @@ app.get('/new', (req, res) => {
 
 
 app.post('/', (req, res) => {
-    console.log('it works!');
     const { username: user, content: comment } = req.body;
-    console.log(req.body);
-    comments.push({ user, comment });
+    let newId = comments.length;
+    comments.push({ id: newId, user, comment, });
     console.log(comments);
     res.redirect('/');
 })
