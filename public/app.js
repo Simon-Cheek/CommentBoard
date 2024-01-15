@@ -9,4 +9,6 @@ createForm.addEventListener('submit', (e) => {
         e.preventDefault();
         alert('Please enter a username and comment!');
     }
-})
+});
+
+

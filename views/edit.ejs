@@ -9,11 +9,22 @@
 </head>
 
 <body>
-    <p>Comment is <%= comment.comment %>
-    </p>
+    <h2>Edit Comment:</h2>
+    <!-- <p>Comment is <%= comment.comment %> </p> -->
 
 
-    <script src="app.js"></script>
+    <form method="POST" action="/<%= comment.id %>?_method=PATCH">
+        <section class="input">
+            <label for="commentEdit">Comment:</label>
+            <textarea name="commentEdit" id="comment-edit" cols="30" rows="10">
+                <%= comment.comment %>
+            </textarea>
+        </section>
+        <button class="btn">Submit</button>
+    </form>
+
+
+    <script src="edit.js"></script>
 </body>
 
 </html>
