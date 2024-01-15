@@ -6,8 +6,11 @@ body {
     background-color: white;
     border: 2solid 2px black;
     border-radius: 10px;
-    padding: 4px;
+    padding: 4px 8px;
     margin: 8px 12px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start;
 }
 
 .btn {
@@ -31,4 +34,10 @@ body {
 
 label {
     margin-right: 4px;
+}
+
+.modify-comments {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
 }

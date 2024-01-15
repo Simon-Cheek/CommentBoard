@@ -34,6 +34,12 @@ app.get('/new', (req, res) => {
     res.render('new.ejs');
 });
 
+app.get('/:id', (req, res) => {
+    const { id } = req.params;
+    const comment = comments.find(com => com.id === parseInt(id));
+    res.render('edit.ejs', { comment });
+});
+
 
 app.post('/', (req, res) => {
     const { username: user, content: comment } = req.body;
