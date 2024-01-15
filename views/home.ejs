@@ -14,25 +14,30 @@
 
     <div>
         <% for (let item of comments) { %>
-            <div class="commentbox">
-                <div class="comment-info">
-                    <p><b>Person:</b>
-                        <%= item.user %>
-                    </p>
-                    <p><b>Comment:</b>
-                        <%= item.comment %>
-                    </p>
-                </div>
 
-                <div class="modify-comments">
-                    <a href="/<%= item.id %>"><button class="btn">Modify</button></a>
-                </div>
+            <div class="comment-wrapper">
+                <div class="commentbox">
+                    <div class="comment-info">
+                        <p><b>Person:</b>
+                            <%= item.user %>
+                        </p>
+                        <p><b>Comment:</b>
+                            <%= item.comment %>
+                        </p>
+                    </div>
 
+                    <div class="modify-comments">
+                        <a href="/<%= item.id %>"><button class="btn">Modify</button></a>
+                    </div>
+                </div>
             </div>
+
             <% } %>
     </div>
 
-    <a href="/new"><button class="btn"> Create a new Comment!</button></a>
+    <div class="below">
+        <a href="/new"><button class="btn"> Create a new Comment!</button></a>
+    </div>
 
 </body>
 
