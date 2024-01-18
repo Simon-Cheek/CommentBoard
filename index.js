@@ -22,7 +22,7 @@ const comments = [
         user: 'User2',
         comment: 'Nice!'
     }
-]
+];
 
 
 
@@ -55,7 +55,6 @@ app.post('/', (req, res) => {
     const { username: user, content: comment } = req.body;
     let newId = comments.length;
     comments.push({ id: newId, user, comment, });
-    console.log(comments);
     res.redirect('/');
 })
 
