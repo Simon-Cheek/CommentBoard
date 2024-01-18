@@ -28,7 +28,9 @@
 
                     <div class="modify-comments">
                         <a href="/<%= item.id %>"><button class="btn btn-blue">Modify</button></a>
-                        <a href="/"><button class="btn btn-red">Delete</button></a>
+                        <form method="POST" action="/<%= item.id %>?_method=DELETE">
+                            <button class="btn btn-red">Delete</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
 
-const comments = [
+let comments = [
     {
         id: 0,
         user: 'User1',
@@ -50,6 +50,12 @@ app.patch('/:id', (req, res) => {
     res.redirect('/');
 });
 
+app.delete('/:id', (req, res) => {
+    const { id } = req.params;
+    comments = comments.filter(c => c.id != id);
+    res.redirect('/');
+});
+
 
 app.post('/', (req, res) => {
     const { username: user, content: comment } = req.body;
@@ -63,3 +69,6 @@ app.post('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Listening on Port ${port}!`);
 });
+
+
+// implement feature to allow comments to give x/5 rating and then post average rating (use star icons?)
