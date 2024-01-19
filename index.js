@@ -43,6 +43,7 @@ app.get('/:id', (req, res) => {
 });
 
 app.patch('/:id', (req, res) => {
+    console.log(req.params);
     const { id } = req.params;
     const newText = req.body.commentEdit;
     const comment = comments.find(com => com.id === parseInt(id));
@@ -69,6 +70,5 @@ app.post('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Listening on Port ${port}!`);
 });
-
 
 // implement feature to allow comments to give x/5 rating and then post average rating (use star icons?)
