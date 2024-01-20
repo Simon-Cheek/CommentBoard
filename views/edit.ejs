@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Comment</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="/app.css">
 </head>
 
 <body>
     <h2>Edit Comment:</h2>
 
-    <!-- <% console.log(comment); %> -->
-
-
-    <form method="POST" action="/<%= comment.id %>?_method=PATCH">
+    <form method="POST" action="/comment/<%= comment._id %>?_method=PATCH">
         <section class="input">
             <label for="commentEdit">Comment:</label>
             <textarea name="commentEdit" id="comment-edit" cols="30" rows="10"><%= comment.comment %></textarea>
