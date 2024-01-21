@@ -1,5 +1,6 @@
 body {
     background-color: rgba(0, 220, 220, 0.5);
+    padding: 0 8px;
 }
 
 .comment-wrapper {
@@ -68,4 +69,9 @@ label {
 .below {
     display: flex;
     justify-content: center;
+}
+
+.radio-btn {
+    display: flex;
+    flex-direction: column;
 }

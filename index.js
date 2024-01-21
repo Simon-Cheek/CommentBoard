@@ -17,11 +17,13 @@ let comments = [
     {
         _id: 0,
         user: 'User1',
-        comment: 'This thing is so cool! Wow, look at this!'
+        comment: 'This thing is so cool! Wow, look at this!',
+        rating: 4
     }, {
         _id: 1,
         user: 'User2',
-        comment: 'Nice!'
+        comment: 'Nice!',
+        rating: 3
     }
 ];
 
@@ -65,9 +67,10 @@ app.delete('/comment/:_id', (req, res) => {
 
 app.post('/', (req, res) => {
     const { username: user, content: comment } = req.body;
+    let rating = parseInt(req.body.rating);
     let newId = id_assign;
     id_assign++;
-    comments.push({ _id: newId, user, comment, });
+    comments.push({ _id: newId, user, comment, rating });
     res.redirect('/');
 })
 
