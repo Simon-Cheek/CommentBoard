@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
+let id_assign = 2;
 
 let comments = [
     {
@@ -64,7 +65,8 @@ app.delete('/comment/:_id', (req, res) => {
 
 app.post('/', (req, res) => {
     const { username: user, content: comment } = req.body;
-    let newId = comments.length;
+    let newId = id_assign;
+    id_assign++;
     comments.push({ _id: newId, user, comment, });
     res.redirect('/');
 })
