@@ -70,8 +70,3 @@ label {
     display: flex;
     justify-content: center;
 }
-
-.radio-btn {
-    display: flex;
-    flex-direction: column;
-}
