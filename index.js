@@ -44,8 +44,7 @@ const calcAverageScore = (comments) => {
 
 app.get('/', (req, res) => {
     const avgScore = calcAverageScore(comments);
-    console.log(avgScore);
-    res.render('home.ejs', { comments });
+    res.render('home.ejs', { comments, avgScore });
 });
 
 
