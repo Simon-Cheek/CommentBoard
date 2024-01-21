@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
+
 let id_assign = 2;
 
 let comments = [
@@ -27,10 +28,23 @@ let comments = [
     }
 ];
 
+// function to calculate average score, called upon every GET request for the home page
+
+const calcAverageScore = (comments) => {
+    let totalScore = 0;
+    for (comment of comments) {
+        totalScore += comment.rating;
+    }
+    return totalScore / comments.length;
+}
+
+
 
 
 
 app.get('/', (req, res) => {
+    const avgScore = calcAverageScore(comments);
+    console.log(avgScore);
     res.render('home.ejs', { comments });
 });
 
