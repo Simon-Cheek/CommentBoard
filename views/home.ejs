@@ -18,11 +18,16 @@
             <div class="comment-wrapper">
                 <div class="commentbox">
                     <div class="comment-info">
-                        <p><b>Person:</b>
+                        <p><b>Username:</b>
                             <%= item.user %>
                         </p>
                         <p><b>Comment:</b>
                             <%= item.comment %>
+                        </p>
+                        <p><b>Rating:</b>
+                            <% for (let i=0; i<item.rating; i++) { %>
+                                <span class="star">&#9733;</span>
+                                <% } %>
                         </p>
                     </div>
 
