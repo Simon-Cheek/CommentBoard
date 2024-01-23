@@ -35,11 +35,11 @@ const calcAverageScore = (comments) => {
     for (comment of comments) {
         totalScore += comment.rating;
     }
-    return totalScore / comments.length;
+    return Math.round((totalScore / comments.length) * 100) / 100;
 }
 
 
-
+// Server Routing BELOW
 
 
 app.get('/', (req, res) => {
