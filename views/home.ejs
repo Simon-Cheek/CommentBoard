@@ -16,7 +16,11 @@
 
     <h1 class="main-head">Simon Cheek</h1>
 
-    <div>
+    <div class="comment-body">
+        <p class="score-display">
+            <b>Average Score:</b>
+            <%= avgScore %> / 5
+        </p>
         <% for (let item of comments) { %>
 
             <div class="comment-wrapper">
@@ -36,7 +40,7 @@
                     </div>
 
                     <div class="modify-comments">
-                        <a href="/comment/<%= item._id %>"><button class="btn btn-blue">Modify</button></a>
+                        <a href="/comment/<%= item._id %>"><button class="btn btn-green">Modify</button></a>
                         <form method="POST" action="/comment/<%= item._id %>?_method=DELETE">
                             <button class="btn btn-red">Delete</button>
                         </form>
@@ -48,11 +52,7 @@
     </div>
 
     <div class="below">
-        <p class="score-display">
-            <b>Average Score:</b>
-            <%= avgScore %> / 5
-        </p>
-        <a href="/new"><button class="btn"> Create a new Comment!</button></a>
+        <a href="/new"><button class="btn btn-green"> Create a new Comment!</button></a>
     </div>
 
 </body>

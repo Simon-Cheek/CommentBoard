@@ -1,45 +1,51 @@
 body {
-    background-color: rgb(0, 10, 25);
+    height: 100%;
+    background: linear-gradient(170deg, #163666, #142443);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(220, 220, 250);
     padding: 0 8px;
     font-family: 'PT Serif';
 }
 
 .comment-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .commentbox {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
-    background-color: white;
+    background-color: rgb(8, 25, 50);
     border: 2solid 2px black;
     border-radius: 10px;
-    padding: 4px 8px;
+    padding: 6px 12px;
     margin: 8px 12px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 3px rgba(100, 200, 235, 0.2);
     display: flex;
     justify-content: space-between;
-    max-width: 1000px;
+    max-width: 800px;
 }
 
 .btn {
     margin: 4px 12px;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     border: 1px solid black;
     border-radius: 30px;
     padding: 6px 10px;
     cursor: pointer;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.btn-blue {
-    background-color: rgb(80, 120, 200);
+.btn-green {
+    background-color: rgb(40, 180, 160);
     color: white;
     border: none;
 }
 
 .btn-red {
-    background-color: rgb(200, 80, 120);
+    background-color: rgb(180, 40, 160);
     color: white;
     border: none;
 }
@@ -49,7 +55,6 @@ body {
 }
 
 .main-head {
-    color: rgb(220, 220, 250);
     font-style: italic;
 }
 
@@ -73,17 +78,23 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: top;
+    margin-top: 12px;
 }
 
 .score-display {
     margin: 8px 12px;
-    background-color: white;
+    background-color: rgb(8, 25, 50);
     border-radius: 10px;
-    padding: 0.8em 2em;
+    padding: 12px 12px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    width: 50%;
 }
 
 .star {
-    color: rgb(210, 187, 37);
+    color: rgb(40, 180, 160);
+}
+
+.comment-body {
+    max-width: 800px;
 }
