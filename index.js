@@ -18,13 +18,13 @@ let comments = [
     {
         _id: 0,
         user: 'User1',
-        comment: 'This thing is so cool! Wow, look at this!',
+        comment: 'Creative, innovative thinker!',
         rating: 4
     }, {
         _id: 1,
         user: 'User2',
-        comment: 'Nice!',
-        rating: 3
+        comment: 'Hard to track down for a game night',
+        rating: 2
     }
 ];
 

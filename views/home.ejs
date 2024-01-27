@@ -18,7 +18,7 @@
 
     <div class="comment-body">
         <p class="score-display">
-            <b>Average Score:</b>
+            <b>Average Score: </b>
             <%= avgScore %> / 5
         </p>
         <% for (let item of comments) { %>
@@ -26,13 +26,13 @@
             <div class="comment-wrapper">
                 <div class="commentbox">
                     <div class="comment-info">
-                        <p><b>Username:</b>
+                        <p><b>Username: </b>
                             <%= item.user %>
                         </p>
-                        <p><b>Comment:</b>
+                        <p><b>Comment: </b>
                             <%= item.comment %>
                         </p>
-                        <p><b>Rating:</b>
+                        <p><b>Rating: </b>
                             <% for (let i=0; i<item.rating; i++) { %>
                                 <span class="star">&#9733;</span>
                                 <% } %>
