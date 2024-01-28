@@ -28,7 +28,7 @@ body {
 }
 
 .btn {
-    margin: 4px 12px;
+    margin: 8px 12px;
     background-color: rgb(240, 240, 240);
     border: 1px solid black;
     border-radius: 30px;
@@ -36,22 +36,32 @@ body {
     cursor: pointer;
     box-shadow: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
 }
 
 .btn-green {
-    background-color: rgb(40, 180, 160);
+    background-color: rgb(40, 170, 140);
     color: white;
     border: none;
 }
 
 .btn-red {
-    background-color: rgb(180, 40, 160);
+    background-color: rgb(170, 40, 120);
     color: white;
     border: none;
 }
 
-.btn-blue:active {
-    background-color: rgb(130, 180, 250);
+.btn-green:active {
+    background-color: rgb(60, 210, 170);
+}
+
+.btn-red:active {
+    background-color: rgb(210, 70, 180);
 }
 
 .main-head {
@@ -92,9 +102,17 @@ label {
 }
 
 .star {
-    color: rgb(40, 180, 160);
+    color: rgb(40, 170, 140);
 }
 
 .comment-body {
     max-width: 800px;
+}
+
+.top {
+    margin-bottom: 24px;
+}
+
+.radio {
+    margin-bottom: 12px;
 }

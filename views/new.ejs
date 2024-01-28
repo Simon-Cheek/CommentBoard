@@ -14,7 +14,7 @@
 
 <body>
 
-    <h1 class="main-head">This is where a new comment is created!</h1>
+    <h1 class="main-head">Create a New Comment</h1>
 
     <form id="createForm" action="/" method="post">
 
@@ -28,7 +28,7 @@
             <textarea name="content" id="createContent" cols="30" rows="5" placeholder="Comment"></textarea>
         </section>
 
-        <section>
+        <section class="radio">
             <p>Select your Rating for this WebApp:</p>
             <input type="radio" id="one" name="rating" value="1">
             <label for="one">1/5 Stars</label>
@@ -42,11 +42,11 @@
             <label for="five">5/5 Stars</label>
         </section>
 
-        <button class="submit btn">Submit!</button>
+        <button class="submit btn btn-green">Submit!</button>
 
     </form>
 
-    <a href="/"><button class="btn">Cancel</button></a>
+    <a href="/"><button class="btn btn-red">Cancel</button></a>
 
 
     <script src="app.js"></script>
