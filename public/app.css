@@ -8,9 +8,14 @@ body {
     font-family: 'PT Serif';
 }
 
+#main-title {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+}
+
 .comment-wrapper {
     display: flex;
-    justify-content: flex-start;
 }
 
 .commentbox {
