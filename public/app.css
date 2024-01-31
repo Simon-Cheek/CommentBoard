@@ -112,6 +112,7 @@ label {
 
 .comment-body {
     max-width: 800px;
+    animation: 0.5s comment-animation ease-in;
 }
 
 .top {
@@ -131,4 +132,14 @@ label {
 
 .input {
     margin-bottom: 8px;
+}
+
+@keyframes comment-animation {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
