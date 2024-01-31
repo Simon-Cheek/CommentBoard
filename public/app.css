@@ -14,6 +14,10 @@ body {
     text-underline-offset: 6px;
 }
 
+#desc {
+    color: rgb(40, 170, 140);
+}
+
 .comment-wrapper {
     display: flex;
 }
@@ -46,7 +50,7 @@ body {
 }
 
 .btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .btn-green {
