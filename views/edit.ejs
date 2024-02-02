@@ -13,11 +13,17 @@
 </head>
 
 <body>
-    <h2>Edit Comment:</h2>
+    <h1 class="main-head">Edit Comment</h1>
+
+    <p> <span class="bold-text">Username:</span>
+        <span class="green-text bold-text">
+            <%= comment.user %>
+        </span>
+    </p>
 
     <form method="POST" action="/comment/<%= comment._id %>?_method=PATCH">
         <section class="input">
-            <label for="commentEdit">Comment:</label>
+            <label for="commentEdit" class="bold-text">Comment:</label>
             <textarea name="commentEdit" id="comment-edit" cols="30" rows="10"><%= comment.comment %></textarea>
         </section>
         <button class="btn btn-green">Submit</button>

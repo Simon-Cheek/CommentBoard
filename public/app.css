@@ -116,7 +116,15 @@ label {
 
 .comment-body {
     max-width: 800px;
-    animation: 0.5s comment-animation ease-in;
+    animation: 0.4s comment-animation ease-in;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.green-text {
+    color: rgb(40, 170, 140);
 }
 
 .top {
